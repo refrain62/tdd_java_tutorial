@@ -11,6 +11,6 @@ public class Dollar {
 
     void times( int multiplier )
     {
-        amount = this.amount * multiplier;
+        amount *= multiplier;
     }
 }
