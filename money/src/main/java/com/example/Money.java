@@ -5,6 +5,8 @@ abstract class Money {
 
     abstract Money times( int multipier );
 
+    abstract String currency();
+
     // イコール処理
     public boolean equals( Object object )
     {
