@@ -44,12 +44,12 @@ package com.example;
 □ nullとの等価性比較
 □ 他のオブジェクトとの等価性比較
 ■ 5CHF * 2 = 10CHF
-□ Dollar と Franc の重複
+■ Dollar と Franc の重複
 ■ equals の一般化
 ■ times の一般化
 ■ Franc と Dollar を比較する
 ■ 通貨の概念
-□ testFrancMultiplication のテストを削除する？
+■ testFrancMultiplication のテストを削除する？
 */
 // --------------------------------------------------------------------------------
 
