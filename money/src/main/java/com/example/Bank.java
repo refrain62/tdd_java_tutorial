@@ -3,9 +3,11 @@ package com.example;
 public class Bank {
     Money reduce( Expression source, String to )
     {
-        Sum sum = (Sum)source;
-        int amount = sum.augend.amount + sum.addend.amount;
+        if( source instanceof Money )
+            return ((Money)source).reduce( to );
 
-        return new Money( amount, to );
+        Sum sum = (Sum)source;
+
+        return sum.reduce( to );
     }
 }
