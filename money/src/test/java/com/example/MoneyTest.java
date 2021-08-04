@@ -1,6 +1,8 @@
 package com.example;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -25,5 +27,12 @@ public class MoneyTest
         // 3で掛けた場合のチェック
         product = five.times( 3 );
         assertEquals(15, product.amount);
+    }
+
+    @Test
+    public void testEquality()
+    {
+        // イコールの確認用
+        assertTrue(new Dollar( 5 ).equals( new Dollar( 5 ) ) );
     }
 }
