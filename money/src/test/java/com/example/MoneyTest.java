@@ -17,16 +17,13 @@ public class MoneyTest
     @Test
     public void testMultiplication()
     {
-        Dollar product = null;
         Dollar five = new Dollar( 5 );
         
         // 2で掛けた場合のチェック
-        product = five.times( 2 );
-        assertEquals( new Dollar( 10 ), product);
+        assertEquals( new Dollar( 10 ), five.times( 2 ));
 
         // 3で掛けた場合のチェック
-        product = five.times( 3 );
-        assertEquals( new Dollar( 15 ), product);
+        assertEquals( new Dollar( 15 ), five.times( 3 ));
     }
 
     @Test
