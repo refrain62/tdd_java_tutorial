@@ -2,10 +2,14 @@ package com.example;
 
 abstract class Money {
     protected int amount;
+    protected String currency;
 
     abstract Money times( int multipier );
 
-    abstract String currency();
+    String currency()
+    {
+        return this.currency;
+    }
 
     // イコール処理
     public boolean equals( Object object )
