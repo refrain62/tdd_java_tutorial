@@ -17,6 +17,8 @@ public class Dollar {
     // イコール処理
     public boolean equals( Object object )
     {
-        return true;
+        Dollar dollar = (Dollar)object;
+
+        return amount == dollar.amount;
     }
 }
