@@ -1,10 +1,13 @@
 package com.example;
 
-abstract class Money {
+class Money {
     protected int amount;
     protected String currency;
 
-    abstract Money times( int multipier );
+    Money times( int multipier )
+    {
+        return null;
+    }
 
     Money( int amount, String currency )
     {
@@ -24,6 +27,11 @@ abstract class Money {
 
         return amount == money.amount
                 &&  getClass().equals( money.getClass() );
+    }
+
+    public String toString()
+    {
+        return amount + " " + currency;
     }
 
     static Money dollar( int amount )
