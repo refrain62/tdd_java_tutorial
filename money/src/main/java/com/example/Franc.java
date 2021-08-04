@@ -12,12 +12,4 @@ public class Franc extends Money {
     {
         return new Franc( amount * multiplier );
     }
-
-    // イコール処理
-    public boolean equals( Object object )
-    {
-        Franc franc = (Franc)object;
-
-        return amount == franc.amount;
-    }
 }
