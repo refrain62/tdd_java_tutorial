@@ -4,9 +4,9 @@ class Money {
     protected int amount;
     protected String currency;
 
-    Money times( int multipier )
+    Money times( int multiplier )
     {
-        return null;
+        return new Money( amount * multiplier, currency );
     }
 
     Money( int amount, String currency )
@@ -26,7 +26,7 @@ class Money {
         Money money = (Money)object;
 
         return amount == money.amount
-                &&  getClass().equals( money.getClass() );
+                &&  currency().equals( money.currency() );
     }
 
     public String toString()
