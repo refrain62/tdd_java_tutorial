@@ -2,7 +2,7 @@ package com.example;
 
 
 public class Dollar {
-    int amount;
+    private int amount;
     
     Dollar( int amount )
     {
