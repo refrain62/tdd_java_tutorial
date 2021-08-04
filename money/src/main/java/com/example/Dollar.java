@@ -12,12 +12,4 @@ public class Dollar extends Money {
     {
         return new Dollar( amount * multiplier );
     }
-
-    // イコール処理
-    public boolean equals( Object object )
-    {
-        Money money = (Money)object;
-
-        return amount == money.amount;
-    }
 }
