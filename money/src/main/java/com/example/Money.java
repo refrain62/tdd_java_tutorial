@@ -6,6 +6,12 @@ abstract class Money {
 
     abstract Money times( int multipier );
 
+    Money( int amount, String currency )
+    {
+        this.amount = amount;
+        this.currency = currency;
+    }
+
     String currency()
     {
         return this.currency;
