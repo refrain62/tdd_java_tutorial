@@ -72,4 +72,16 @@ public class MoneyTest
         Money reduced = bank.reduce( sum, "USD" );
         assertEquals( Money.dollar( 10 ) , reduced );
     }
+
+    @Test
+    public void testPlusReturnsSum()
+    {
+        Money five = Money.dollar( 5 );
+        Expression result = five.plus( five );
+
+        Sum sum = (Sum)result;
+
+        assertEquals( five, sum.augend );       // 被加算数
+        assertEquals( five, sum.addend );       // 加数
+    }
 }
