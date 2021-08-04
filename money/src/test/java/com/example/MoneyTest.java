@@ -14,7 +14,7 @@ public class MoneyTest
     @Test
     public void testMultiplication()
     {
-        Dollar five = new Dollar( 5 );
+        Money five = Money.dollar( 5 );
         
         // 2で掛けた場合のチェック
         assertEquals( new Dollar( 10 ), five.times( 2 ));
@@ -32,6 +32,8 @@ public class MoneyTest
 
         assertTrue(new Franc( 5 ).equals( new Franc( 5 ) ) );
         assertFalse(new Franc( 5 ).equals( new Franc( 6 ) ) );
+        
+        assertFalse(new Franc( 5 ).equals( new Dollar( 5 ) ) );
     }
     
     @Test
