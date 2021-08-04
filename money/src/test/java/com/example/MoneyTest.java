@@ -11,9 +11,6 @@ import org.junit.Test;
  */
 public class MoneyTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
     public void testMultiplication()
     {
@@ -32,5 +29,17 @@ public class MoneyTest
         // イコールの確認用
         assertTrue(new Dollar( 5 ).equals( new Dollar( 5 ) ) );
         assertFalse(new Dollar( 5 ).equals( new Dollar( 6 ) ) );
+    }
+    
+    @Test
+    public void testFrancMultiplication()
+    {
+        Franc five = new Franc( 5 );
+        
+        // 2で掛けた場合のチェック
+        assertEquals( new Franc( 10 ), five.times( 2 ));
+
+        // 3で掛けた場合のチェック
+        assertEquals( new Franc( 15 ), five.times( 3 ));
     }
 }
