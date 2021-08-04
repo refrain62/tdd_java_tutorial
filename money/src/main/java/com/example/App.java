@@ -37,7 +37,7 @@ package com.example;
 □ $5 + 10CHF = $10（レートが2:1の場合）
 □ $5 + $5 = $10
 □ $5 + $5 が Money を返す
-□ bank.reduce( Money )
+■ bank.reduce( Money )
 ■ $5 * 2 = $10
 ■ amount を private にする
 ■ Dollar の副作用どうする？
