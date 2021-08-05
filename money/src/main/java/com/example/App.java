@@ -36,10 +36,10 @@ package com.example;
 /*
 ■ $5 + 10CHF = $10（レートが2:1の場合）
 ■ $5 + $5 = $10
-□ $5 + $5 が Money を返す
+■ $5 + $5 が Money を返す
 ■ bank.reduce( Money )
 ■ Sum.plus
-□ Expression.times
+■ Expression.times
 ■ Money を変換して換算を行う
 ■ $5 * 2 = $10
 ■ amount を private にする
