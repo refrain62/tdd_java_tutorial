@@ -38,6 +38,7 @@ package com.example;
 □ $5 + $5 = $10
 □ $5 + $5 が Money を返す
 ■ bank.reduce( Money )
+□ Money を変換して菅さんを行う
 ■ $5 * 2 = $10
 ■ amount を private にする
 ■ Dollar の副作用どうする？
